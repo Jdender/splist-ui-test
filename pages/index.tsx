@@ -1,5 +1,13 @@
 import React, { FC } from 'react';
+import { Layout, LodgeBar, Nav, ToolBar, Main } from '../components/layout';
 
-const Index: FC = () => <h1>Hello world</h1>;
+const Index: FC = () => (
+    <Layout>
+        <LodgeBar />
+        <Nav header="Home"></Nav>
+        <ToolBar>foo</ToolBar>
+        <Main></Main>
+    </Layout>
+);
 
 export default Index;
